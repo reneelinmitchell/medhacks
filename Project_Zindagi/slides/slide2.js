@@ -1,24 +1,29 @@
 var hello = document.getElementById('homepagemain');
 var srk = document.createElement('img');
-srk.src = 'https://www.filmibeat.com/img/2017/01/10-1484055289-kal-ho-na-ho-1.jpg';
-console.log(srk.src);
-
+srk.src = 'https://raw.githubusercontent.com/reneelinmitchell/medhacks/master/Project_Zindagi/zindagi.png';
 var srkDiv = document.createElement('div');
 srkDiv.appendChild(srk);
 var srkTextTag = document.createElement('h2');
-srkTextTag.innerText = 'Hi! Welcome to MyChart! My name is Zindagi, and I am at your service! I am here to walk you through the basics :)';
+srkTextTag.innerText = "Now you are logged into MyChart!  Welcome to Zindagi's personal tour.  Click the button below to start!";
 srkDiv.appendChild(srkTextTag);
-srkDiv.style = 'position: absolute; width: 300px; height: 350px; left: 600px; right: 20px; top: 10px; margin-left: 20%; background-color: white';
-srk.style = 'width: 50%; height: 40%; padding-top: 4%';
+srkDiv.style = 'position: absolute; width: 300px; height: 430px; left: 600px; right: 20px; top: 120px; margin-left: 20%; background-color: white';
+srk.style = 'width: 50%; height: 50%; padding-top: 4%';
 srkTextTag.style = "padding: 6%";
 
 var button = document.createElement('button');
 button.type = "button";
-var text = document.createTextNode("Click here to go to the next step!"); 
+var text = document.createTextNode("Start the tour!"); 
 button.appendChild(text);
 button.value = "nextStep";
 button.style = "width: 200px; height: 50px";
-button.onclick = ""; // document.getElementById('searchForm').submit()
-srkDiv.appendChild(button);
+button.onclick = function(){
+	var rightArrow = document.createElement('img');
+    rightArrow.src = "https://www.pngfind.com/pngs/m/302-3023323_arrow-pointing-to-right-comments-right-arrow-png.png";
+    rightArrow.style = 'position: absolute; width: 100px; height: 50px; right: 600px; top: 45px; margin-right: 15%;';
+    hello.appendChild(rightArrow);
+    button.style = "visibility: hidden";
+	srkTextTag.innerText = "The circled area is the messaging button.  It is where your health providers leave notes for you!  Move your cursor over the icon";
+}
 
+srkDiv.appendChild(button);
 hello.appendChild(srkDiv);
