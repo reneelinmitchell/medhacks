@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   chrome.browserAction.onClicked.addListener(function(tab) {
-    console.log('hellooo');
-    chrome.tabs.executeScript({file: "content.js"});
+    chrome.tabs.executeScript({file: "slides/slide1.js"});
   });
 
 });
