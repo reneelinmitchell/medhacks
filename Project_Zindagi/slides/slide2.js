@@ -1,4 +1,4 @@
-var hello = document.getElementsByClassName('loginAlerts')[0];
+var hello = document.getElementById('homepagemain');
 var srk = document.createElement('img');
 srk.src = 'https://www.filmibeat.com/img/2017/01/10-1484055289-kal-ho-na-ho-1.jpg';
 console.log(srk.src);

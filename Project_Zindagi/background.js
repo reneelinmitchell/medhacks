@@ -5,3 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+  if (changeInfo.url) {
+    chrome.tabs.executeScript({file: "slides/slide2.js"});
+  };
+});
