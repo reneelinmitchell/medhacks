@@ -16,7 +16,7 @@ button.appendChild(text);
 button.value = "nextStep";
 button.style = "width: 200px; height: 50px";
 button.onclick = function(){
-	// chrome.tabs.executeScript({file: "slides/slide2.js"});
+    // chrome.tabs.executeScript({file: "slides/slide2.js"});
     srkTextTag.innerText = 'If you are an existing user, enter your MyChart username where the arrow is pointing.  Then press the tab key!';
 
     var rightArrow = document.createElement('img');
@@ -26,17 +26,18 @@ button.onclick = function(){
     button.style = "visibility: hidden";
 
     document.addEventListener("keydown", function(event) {
-	  if (event.which == 9) {
-	  	rightArrow.style = 'position: absolute; width: 100px; height: 50px; right: 600px; top: 95px; margin-right: 15%;';
-	  	srkTextTag.innerText = "Now enter your password where the arrow indicates.  Then press enter!";
-	  }
-	})
+      if (event.which == 9) {
+        rightArrow.style = 'position: absolute; width: 100px; height: 50px; right: 600px; top: 95px; margin-right: 15%;';
+        srkTextTag.innerText = "Now enter your password where the arrow indicates.  Then press enter!";
+      }
+    })
 
     return false;
 }
 
 srkDiv.appendChild(button);
 hello.appendChild(srkDiv);
+
 // var audio = document.createElement("iframe");
 // audio.src = 'C:/Users/student/Documents/medhacks/Project_Zindagi/audio/audio0.wav';
 // audio.allow = 'autoplay';

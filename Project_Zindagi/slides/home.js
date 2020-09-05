@@ -18,13 +18,14 @@ button.value = "nextStep";
 button.style = "width: 200px; height: 50px";
 button.onclick = function(){
 	var rightArrow = document.createElement('img');
+	var messageIcon = document.getElementsByClassName("menugroup")[2];
     rightArrow.src = "https://www.pngfind.com/pngs/m/109-1092958_png-file-svg-arrow-pointing-up-transparent-png.png";
     rightArrow.style = 'position: absolute; z-index: 99999; width: 50px; height: 100px; right: 520px; top: 150px; margin-right: 15%;';
-    hello.appendChild(rightArrow);
+
+    messageIcon.appendChild(rightArrow);
     button.style = "visibility: hidden";
 	srkTextTag.innerText = "The arrow is pointing to the messaging button.  It is where your health providers leave notes for you!  Move your cursor over the icon";
 
-	var messageIcon = document.getElementsByClassName("menugroup")[2];
 	messageIcon.onmouseover = function(){
 		srkTextTag.innerText = "Now click on Message Center to access your messages!";
 	};
