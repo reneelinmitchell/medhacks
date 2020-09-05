@@ -20,7 +20,7 @@ button.onclick = function(){
 	var rightArrow = document.createElement('img');
 	var messageIcon = document.getElementsByClassName("menugroup")[2];
     rightArrow.src = "https://www.pngfind.com/pngs/m/109-1092958_png-file-svg-arrow-pointing-up-transparent-png.png";
-    rightArrow.style = 'position: absolute; z-index: 99999; width: 50px; height: 100px; right: 120px; top: 150px; margin-right: 15%;';
+    rightArrow.style = 'position: absolute; z-index: 99999; width: 50px; height: 100px; left: 590px; top: 120px;';
 
     messageIcon.appendChild(rightArrow);
     button.style = "visibility: hidden";
