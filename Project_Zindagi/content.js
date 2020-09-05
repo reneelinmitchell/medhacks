@@ -8,7 +8,7 @@ srkDiv.appendChild(srk);
 var srkTextTag = document.createElement('h2');
 srkTextTag.innerText = 'Hi! Welcome to MyChart! My name is Zindagi, and I am at your service! I am here to walk you through the basics :)';
 srkDiv.appendChild(srkTextTag);
-srkDiv.style = 'position: absolute; width: 300px; height: 350px; left: 600px; right: 20px; top: 40px; margin-left: 20%; background-color: white';
+srkDiv.style = 'position: absolute; width: 300px; height: 350px; left: 600px; right: 20px; top: 10px; margin-left: 20%; background-color: white';
 srk.style = 'width: 50%; height: 40%; padding-top: 4%';
 srkTextTag.style = "padding: 6%";
 
