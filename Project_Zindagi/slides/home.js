@@ -1,6 +1,6 @@
 var hello = document.getElementById('homepagemain');
 var srk = document.createElement('img');
-srk.src = 'https://raw.githubusercontent.com/reneelinmitchell/medhacks/master/Project_Zindagi/zindagi.png';
+srk.src = 'https://raw.githubusercontent.com/reneelinmitchell/medhacks/master/Project_Zindagi/zindagi.jpg';
 var srkDiv = document.createElement('div');
 srkDiv.appendChild(srk);
 var srkTextTag = document.createElement('h2');
@@ -15,7 +15,7 @@ button.type = "button";
 var text = document.createTextNode("Start the tour!"); 
 button.appendChild(text);
 button.value = "nextStep";
-button.style = "width: 200px; height: 50px";
+button.style = "width: 200px; height: 50px; margin-left: 17%";
 button.onclick = function(){
 	var rightArrow = document.createElement('img');
 	var messageIcon = document.getElementsByClassName("menugroup")[2];

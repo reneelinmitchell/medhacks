@@ -13,6 +13,8 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 		    chrome.tabs.executeScript({file: "slides/home.js"});
 		  } else if (changeInfo.url.includes("Mychart/Messaging/Review?mailbox")) {
 		  	chrome.tabs.executeScript({file: "slides/messages.js"});
+		  } else if (changeInfo.url.includes("Visits/visitslist")) {
+		  	chrome.tabs.executeScript({file: "slides/visits.js"})
 		  };
 	}
   

@@ -1,7 +1,7 @@
 //var hello = document.getElementsByClassName('loginAlerts')[0];
 var hello = document.getElementById('main');
 var srk = document.createElement('img');
-srk.src = 'https://raw.githubusercontent.com/reneelinmitchell/medhacks/master/Project_Zindagi/zindagi.png';
+srk.src = 'https://raw.githubusercontent.com/reneelinmitchell/medhacks/master/Project_Zindagi/zindagi.jpg';
 srk.style = "border: 12px solid #fff";
 var srkDiv = document.createElement('div');
 srkDiv.appendChild(srk);
