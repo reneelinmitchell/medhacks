@@ -1,10 +1,3 @@
-var audio = document.createElement("audio");
-audio.src = "../audio/hello.mp3";
-audio.autoplay = true;
-audio.load();
-var hiddenClass = document.getElementsByClassName("hidden")[0];
-hiddenClass.appendChild(audio);
-
 var hello = document.getElementById('main');
 var srk = document.createElement('img');
 srk.src = 'https://raw.githubusercontent.com/reneelinmitchell/medhacks/master/Project_Zindagi/zindagi.jpg';
